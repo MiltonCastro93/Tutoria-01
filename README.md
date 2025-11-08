@@ -11,24 +11,53 @@ Cada clase se enfoca en un tema específico y evoluciona con nuevos ejemplos, sc
 
 ---
 
-### 🧩 Clase N°1 — Introducción Técnica
+### 📚 Índice de Clases
 
-#### 🦴 Rig en Blender
-- Explicación sobre la estructura de *bones*, jerarquías y controladores.
-- Diferencias entre un rig básico y un rig con control facial.
-- Preparación del modelo para exportación a motores de juego.
+<table align="center">
+  <tr>
+    <th align="center">Clase</th>
+    <th align="center">Tema</th>
+    <th align="center">Contenido</th>
+    <th align="center">Estado</th>
+  </tr>
 
-#### 🔗 SDK y Flujo de Trabajo: *Daz3D → Blender → Unity*
-- Exportación de modelos desde Daz3D usando el SDK correspondiente.  
-- Conversión y ajustes de materiales en Blender.  
-- Integración final en Unity manteniendo animaciones, esqueleto y texturas.  
-- Buenas prácticas para evitar errores de rotación o escalado.
+  <tr>
+    <td align="center"><b>Clase N°1</b></td>
+    <td align="center">Rig, SDK y Delegados</td>
+    <td>
+      <ul>
+        <li>Rig en <b>Blender</b> (jerarquías, controladores, exportación)</li>
+        <li>Flujo de trabajo entre <b>Daz3D → Blender → Unity</b></li>
+        <li>Diferencias entre <code>delegate</code>, <code>Action</code> y <code>Func</code></li>
+      </ul>
+    </td>
+    <td align="center">✅ Finalizada</td>
+  </tr>
 
-#### ⚙️ Delegados, Action y Func en C#
-- Diferencias conceptuales y prácticas entre `delegate`, `Action` y `Func`.  
-- Casos de uso en eventos, callbacks y arquitectura modular.  
-- Ejemplos aplicados al flujo de Unity (métodos, parámetros y retornos).
+  <tr>
+    <td align="center"><b>Clase N°2</b></td>
+    <td align="center">Próximamente...</td>
+    <td>---</td>
+    <td align="center">🕓 En desarrollo</td>
+  </tr>
+</table>
 
 ---
 
-### 📂 Estructura del Repositorio
+### 🧩 Detalle de la Clase N°1
+
+#### 🦴 Rig en Blender
+- Explicación sobre la estructura de *bones*, jerarquías y controladores.  
+- Diferencias entre un rig básico y un rig facial.  
+- Preparación del modelo para exportación a motores de juego.
+
+#### 🔗 SDK y Flujo de Trabajo: *Daz3D → Blender → Unity*
+- Exportación de modelos desde Daz3D con su SDK correspondiente.  
+- Ajustes de materiales y corrección de escalado en Blender.  
+- Integración final en Unity manteniendo esqueleto y animaciones.  
+- Consejos para evitar errores de rotación o desalineación.
+
+#### ⚙️ Delegados, Action y Func en C#
+- Comparativa práctica entre `delegate`, `Action` y `Func`.  
+- Aplicaciones en eventos, callbacks y modularidad de sistemas.  
+- Ejemplos implementados en scripts de Unity con comentarios explicativos.
