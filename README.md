@@ -39,7 +39,6 @@ Estos conceptos promueven un **código más modular, flexible y desacoplado**, f
 
 Se presentó el **ScriptableObject** como una herramienta para almacenar datos persistentes sin necesidad de instanciar GameObjects.  
 A través del atributo `[CreateAssetMenu]`, se mostró cómo generar **activos personalizados** desde el editor de Unity.
-
 También se explicó el uso de **structs serializables** para agrupar datos relacionados (por ejemplo, posición, daño, nombre y efectos visuales), aprovechando la **herencia de ScriptableObject** para mejorar la organización y la eficiencia en la carga de información.
 
 > 💡 Este enfoque permite una arquitectura más limpia, donde los datos son independientes de los objetos de escena.
@@ -57,5 +56,5 @@ En la próxima clase (**Clase N°2**) se explicará el uso de:
 <p align="center">
   Proyecto creado y mantenido por <b>Milton Castro</b>  
   <br>
-  📧 <i>miltondev.contact@gmail.com</i>
+  📧 <i>miltondeniscastro.1993@gmail.com</i>
 </p>
