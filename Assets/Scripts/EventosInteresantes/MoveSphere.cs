@@ -33,6 +33,8 @@ public class MoveSphere : MonoBehaviour
 
     public void saludo(string messege) {
         Debug.Log(messege + " desde MoveSphere");
+        if (Mydelegado == null || myAction == null) return; //verificacion para evitar errores si el delegado o Action no tienen metodos asignados.
+
         Mydelegado -= saludo; //remover el metodo del delegado
         myAction -= saludo; //remover el metodo del Action
     }
