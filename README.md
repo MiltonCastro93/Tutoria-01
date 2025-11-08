@@ -1,85 +1,61 @@
-<h1 align="center">📘 Tutoria-01</h1>
+<h1 align="center">🎓 Tutoria-01</h1>
 <p align="center">
-  <i>Repositorio en constante evolución — Proyecto orientado a la enseñanza y experimentación técnica en entornos de desarrollo 3D y programación en Unity.</i>
+  Proyecto educativo en constante evolución, donde se documentan clases técnicas sobre <b>Unity</b>, <b>Blender</b> y <b>programación en C#</b>.
+  <br>
+  Cada clase aborda distintos conceptos teóricos y prácticos aplicados al desarrollo de videojuegos.
 </p>
 
 ---
 
-### 🎯 Propósito
-Este repositorio tiene como objetivo documentar y compartir diferentes clases y sesiones prácticas que abarcan conceptos esenciales del desarrollo de videojuegos, integración de software 3D y fundamentos de programación aplicada en Unity.  
-Cada clase se enfoca en un tema específico y evoluciona con nuevos ejemplos, scripts y recursos complementarios.
+<h3 align="center">📘 Clase N°1 — Rig, SDK y Delegados en Unity</h3>
+
+### 🎨 Rig y flujo de exportación (SDK entre Daz3D, Blender y Unity)
+
+Se explicó el proceso de **Rigging en Blender**, incluyendo la estructura ósea, pesos de vértices y preparación para animación.  
+Además, se revisó el uso del **SDK de Daz3D**, demostrando cómo exportar personajes hacia Blender y Unity, manteniendo coherencia en:
+
+- Escala y orientación del modelo.  
+- Mapeo de materiales y texturas.  
+- Conservación del esqueleto y pesos.  
+
+Este flujo garantiza una correcta **integración entre arte y motor**, permitiendo una pipeline profesional de trabajo.
 
 ---
 
-### 📚 Índice de Clases
+### ⚙️ Delegados, Action y Func en C#
 
-<table align="center">
-  <tr>
-    <th align="center">Clase</th>
-    <th align="center">Tema</th>
-    <th align="center">Contenido</th>
-    <th align="center">Estado</th>
-  </tr>
+Se abordó el funcionamiento de los **delegados** y su rol dentro de la **programación por eventos**.  
+También se explicó la diferencia entre los tipos más comunes:
 
-  <tr>
-    <td align="center"><b>Clase N°1</b></td>
-    <td align="center">Rig, SDK y Delegados</td>
-    <td>
-      <ul>
-        <li>Rig en <b>Blender</b> (jerarquías, controladores, exportación)</li>
-        <li>Flujo de trabajo entre <b>Daz3D → Blender → Unity</b></li>
-        <li>Diferencias entre <code>delegate</code>, <code>Action</code> y <code>Func</code></li>
-      </ul>
-    </td>
-    <td align="center">✅ Finalizada</td>
-  </tr>
+- **delegate:** Puede devolver cualquier tipo de dato y permite enlazar métodos dinámicamente.  
+- **Action:** Es un delegado especializado que **no devuelve valores** (`void`).  
+- **Func:** Similar a Action, pero **retorna un valor**, ideal para operaciones lógicas o cálculos.
 
-  <tr>
-    <td align="center"><b>Clase N°2</b></td>
-    <td align="center">Eventos y Comunicación en Unity</td>
-    <td>
-      <ul>
-        <li>Uso y diferencias entre <code>Event</code> y <code>UnityEvent</code></li>
-        <li>Ventajas del sistema de eventos frente a llamadas directas</li>
-        <li>Cómo crear sistemas desacoplados para interacción entre objetos</li>
-        <li>Ejemplos prácticos en C# y editor de Unity</li>
-      </ul>
-    </td>
-    <td align="center">🕓 En desarrollo</td>
-  </tr>
-</table>
+Estos conceptos promueven un **código más modular, flexible y desacoplado**, facilitando el mantenimiento y la reutilización de métodos en distintos sistemas.
 
 ---
 
-### 🧩 Detalle de la Clase N°1
+### 🧠 Uso de ScriptableObject y CreateAssetMenu
 
-#### 🦴 Rig en Blender
-- Explicación sobre la estructura de *bones*, jerarquías y controladores.  
-- Diferencias entre un rig básico y un rig facial.  
-- Preparación del modelo para exportación a motores de juego.
+Se presentó el **ScriptableObject** como una herramienta para almacenar datos persistentes sin necesidad de instanciar GameObjects.  
+A través del atributo `[CreateAssetMenu]`, se mostró cómo generar **activos personalizados** desde el editor de Unity.
 
-#### 🔗 SDK y Flujo de Trabajo: *Daz3D → Blender → Unity*
-- Exportación de modelos desde Daz3D con su SDK correspondiente.  
-- Ajustes de materiales y corrección de escalado en Blender.  
-- Integración final en Unity manteniendo esqueleto y animaciones.  
-- Consejos para evitar errores de rotación o desalineación.
+También se explicó el uso de **structs serializables** para agrupar datos relacionados (por ejemplo, posición, daño, nombre y efectos visuales), aprovechando la **herencia de ScriptableObject** para mejorar la organización y la eficiencia en la carga de información.
 
-#### ⚙️ Delegados, Action y Func en C#
-- Comparativa práctica entre `delegate`, `Action` y `Func`.  
-- Aplicaciones en eventos, callbacks y modularidad de sistemas.  
-- Ejemplos implementados en scripts de Unity con comentarios explicativos.
+> 💡 Este enfoque permite una arquitectura más limpia, donde los datos son independientes de los objetos de escena.
 
 ---
+
+<h4 align="center">🚀 Contenido Futuro</h4>
+
+En la próxima clase (**Clase N°2**) se explicará el uso de:
+- **UnityEvent** y **Event**, aplicados al sistema de interacción y eventos personalizados.
+
 ---
 
-### 🧩 Detalle de la Clase N°2
-
-#### 🔔 UnityEvent vs Event
-- **`UnityEvent`** permite vincular funciones desde el *Inspector*, facilitando el trabajo visual sin código.  
-- **`Event`** (C# nativo) ofrece más control y encapsulación, ideal para sistemas internos de lógica.  
-- Ejemplo práctico: disparo de eventos entre scripts de UI y gameplay (botones, interacción, etc).
-
-#### ⚙️ Conceptos Clave
-- Desacoplar dependencias entre componentes.
-- Creación de eventos personalizados.
-- Cómo suscribirse y desuscribirse correctamente para evitar *memory leaks*.
+<h4 align="center">🧑‍💻 Autor</h4>
+<p align="center">
+  Proyecto creado y mantenido por <b>Milton Castro</b>  
+  <br>
+  📧 <i>miltondev.contact@gmail.com</i>
+</p>
