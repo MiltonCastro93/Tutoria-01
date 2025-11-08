@@ -7,41 +7,55 @@
 
 ---
 
-<h3 align="center">📘 Clase N°1 — Rig, SDK y Delegados en Unity</h3>
+<h3 align="center">📘 Clase N°1 — Rig, SDK, Delegados y ScriptableObjects</h3>
 
 ### 🎨 Rig y flujo de exportación (SDK entre Daz3D, Blender y Unity)
 
 Se explicó el proceso de **Rigging en Blender**, incluyendo la estructura ósea, pesos de vértices y preparación para animación.  
-Además, se revisó el uso del **SDK de Daz3D**, demostrando cómo exportar personajes hacia Blender y Unity, manteniendo coherencia en:
+Además, se revisó el uso del **SDK de Daz3D**, mostrando cómo exportar personajes hacia Blender y Unity con coherencia en:
 
 - Escala y orientación del modelo.  
 - Mapeo de materiales y texturas.  
 - Conservación del esqueleto y pesos.  
 
-Este flujo garantiza una correcta **integración entre arte y motor**, permitiendo una pipeline profesional de trabajo.
+Este flujo garantiza una integración sólida entre arte y motor, manteniendo una **pipeline profesional y reutilizable** para futuros proyectos.
+
+---
+
+### 🎥 Cinemachine: Cámaras Inteligentes en Unity
+
+Se presentó el sistema **Cinemachine** de Unity, una herramienta poderosa que facilita la creación de cámaras dinámicas y profesionales **sin necesidad de programar desde cero**.
+
+Entre sus ventajas:
+- Permite crear **cámaras seguidoras**, **estáticas**, o **de enfoque automático**.  
+- Ofrece control total sobre transiciones, límites y prioridades.  
+- Mejora la narrativa visual sin afectar el rendimiento ni requerir scripts personalizados.
+
+> 💡 Ideal para prototipos o proyectos donde la dirección de cámara debe ajustarse rápido, como en escenas cinemáticas o sistemas de cámara tipo *Resident Evil clásico*.
 
 ---
 
 ### ⚙️ Delegados, Action y Func en C#
 
-Se abordó el funcionamiento de los **delegados** y su rol dentro de la **programación por eventos**.  
-También se explicó la diferencia entre los tipos más comunes:
+Se abordó el funcionamiento de los **delegados** y su importancia dentro de la programación por eventos.  
+Además, se detallaron las diferencias entre los tipos más comunes:
 
-- **delegate:** Puede devolver cualquier tipo de dato y permite enlazar métodos dinámicamente.  
-- **Action:** Es un delegado especializado que **no devuelve valores** (`void`).  
-- **Func:** Similar a Action, pero **retorna un valor**, ideal para operaciones lógicas o cálculos.
+- **delegate:** Puede devolver cualquier tipo de dato y enlazar métodos dinámicamente.  
+- **Action:** Un delegado que **no devuelve valores** (`void`).  
+- **Func:** Similar a Action, pero **retorna un valor**, útil para cálculos o comprobaciones lógicas.
 
-Estos conceptos promueven un **código más modular, flexible y desacoplado**, facilitando el mantenimiento y la reutilización de métodos en distintos sistemas.
+Estos conceptos fomentan un **código más modular, limpio y reutilizable**, reduciendo dependencias entre sistemas.
 
 ---
 
 ### 🧠 Uso de ScriptableObject y CreateAssetMenu
 
-Se presentó el **ScriptableObject** como una herramienta para almacenar datos persistentes sin necesidad de instanciar GameObjects.  
-A través del atributo `[CreateAssetMenu]`, se mostró cómo generar **activos personalizados** desde el editor de Unity.
-También se explicó el uso de **structs serializables** para agrupar datos relacionados (por ejemplo, posición, daño, nombre y efectos visuales), aprovechando la **herencia de ScriptableObject** para mejorar la organización y la eficiencia en la carga de información.
+Se presentó el **ScriptableObject** como recurso clave para almacenar y gestionar datos sin necesidad de instanciar objetos en escena.  
+Con el atributo `[CreateAssetMenu]`, se explicó cómo generar **activos personalizados** directamente desde el editor.
 
-> 💡 Este enfoque permite una arquitectura más limpia, donde los datos son independientes de los objetos de escena.
+También se destacó el uso de **structs serializables** para agrupar variables relacionadas (posición, daño, nombre y efectos visuales), aprovechando la **herencia del ScriptableObject** para mejorar la organización y la eficiencia del proyecto.
+
+> 💡 Este enfoque permite separar los datos de la lógica, creando sistemas más escalables y fáciles de mantener.
 
 ---
 
