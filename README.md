@@ -36,8 +36,15 @@ Cada clase se enfoca en un tema específico y evoluciona con nuevos ejemplos, sc
 
   <tr>
     <td align="center"><b>Clase N°2</b></td>
-    <td align="center">Próximamente...</td>
-    <td>---</td>
+    <td align="center">Eventos y Comunicación en Unity</td>
+    <td>
+      <ul>
+        <li>Uso y diferencias entre <code>Event</code> y <code>UnityEvent</code></li>
+        <li>Ventajas del sistema de eventos frente a llamadas directas</li>
+        <li>Cómo crear sistemas desacoplados para interacción entre objetos</li>
+        <li>Ejemplos prácticos en C# y editor de Unity</li>
+      </ul>
+    </td>
     <td align="center">🕓 En desarrollo</td>
   </tr>
 </table>
@@ -61,3 +68,18 @@ Cada clase se enfoca en un tema específico y evoluciona con nuevos ejemplos, sc
 - Comparativa práctica entre `delegate`, `Action` y `Func`.  
 - Aplicaciones en eventos, callbacks y modularidad de sistemas.  
 - Ejemplos implementados en scripts de Unity con comentarios explicativos.
+
+---
+---
+
+### 🧩 Detalle de la Clase N°2
+
+#### 🔔 UnityEvent vs Event
+- **`UnityEvent`** permite vincular funciones desde el *Inspector*, facilitando el trabajo visual sin código.  
+- **`Event`** (C# nativo) ofrece más control y encapsulación, ideal para sistemas internos de lógica.  
+- Ejemplo práctico: disparo de eventos entre scripts de UI y gameplay (botones, interacción, etc).
+
+#### ⚙️ Conceptos Clave
+- Desacoplar dependencias entre componentes.
+- Creación de eventos personalizados.
+- Cómo suscribirse y desuscribirse correctamente para evitar *memory leaks*.
