@@ -61,10 +61,32 @@ También se destacó el uso de **structs serializables** para agrupar variables 
 
 ---
 
+## 🧩 Temas de la Clase N°2
+
+En esta sesión se profundiza en el **sistema de eventos** dentro de Unity, comparando los dos métodos más comunes para comunicar scripts y activar acciones sin dependencias directas:
+
+### 🔹 UnityEvent
+
+El **UnityEvent** es una clase integrada al motor que permite **asignar funciones desde el Inspector** sin escribir código adicional.  
+Esto lo convierte en una herramienta ideal para **diseñadores** o **artistas técnicos**, ya que no requiere modificar el código fuente para enlazar comportamientos.
+
+**✅ Beneficios:**
+- Se configura visualmente desde el Inspector.  
+- Permite conectar múltiples funciones sin modificar el script.  
+- Soporta argumentos básicos (int, float, bool, string, GameObject).  
+- Ideal para sistemas de UI, triggers, o animaciones simples.
+
+**⚠️ Desventajas:**
+- Ligeramente más lento en ejecución por su naturaleza serializada.  
+- No permite un control total sobre el flujo (no admite `+=` o `-=` en código).  
+- Puede romper enlaces si los objetos asignados se eliminan o renombran.  
+
+---
+
 <h4 align="center">🚀 Contenido Futuro</h4>
 
-En la próxima clase (**Clase N°2**) se explicará el uso de:
-- **UnityEvent** y **Event**, aplicados al sistema de interacción y eventos personalizados.
+En la próxima clase (**Clase N°3**) se explicará el uso de:
+- Herencias y usar el "as"
 
 ---
 
