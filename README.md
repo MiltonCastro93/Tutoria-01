@@ -62,11 +62,9 @@ También se destacó el uso de **structs serializables** para agrupar variables 
 ---
 
 ## 🧩 Temas de la Clase N°2
-
-En esta sesión se profundiza en el **sistema de eventos** dentro de Unity, comparando los dos métodos más comunes para comunicar scripts y activar acciones sin dependencias directas:
+En esta sesión se profundiza en el **sistema de eventos** dentro de Unity, comparando los dos métodos más comunes para comunicar scripts y activar acciones sin dependencias directas: (UnityEvent vs event)
 
 ### 🔹 UnityEvent
-
 El **UnityEvent** es una clase integrada al motor que permite **asignar funciones desde el Inspector** sin escribir código adicional.  
 Esto lo convierte en una herramienta ideal para **diseñadores** o **artistas técnicos**, ya que no requiere modificar el código fuente para enlazar comportamientos.
 
@@ -80,6 +78,22 @@ Esto lo convierte en una herramienta ideal para **diseñadores** o **artistas t�
 - Ligeramente más lento en ejecución por su naturaleza serializada.  
 - No permite un control total sobre el flujo (no admite `+=` o `-=` en código).  
 - Puede romper enlaces si los objetos asignados se eliminan o renombran.  
+
+🔹 Event — Sistema Nativo de C#
+El Event de C# representa un enfoque más técnico y modular.
+A diferencia del UnityEvent, este no se configura desde el Inspector, pero ofrece mayor control, rendimiento y seguridad.
+Es ideal para proyectos grandes o cuando se necesita comunicación entre sistemas sin dependencias directas.
+
+**✅ Beneficios:**
+- Mejor rendimiento que UnityEvent.
+- Control total sobre los suscriptores (+=, -=).
+- Evita referencias directas entre scripts (mayor desacoplamiento).
+- Ideal para sistemas complejos como controladores de enemigos, misiones o gestión de UI dinámica.
+
+**⚠️ Desventajas:**
+- No es visible en el Inspector (solo por código).
+- No se serializa.
+- Requiere mayor conocimiento de programación.
 
 ---
 
