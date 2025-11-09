@@ -35,7 +35,7 @@ public class ManagerTurn : MonoBehaviour
                 if (enemigo is EnemyHumanoide)//mas limpio en codigo y rapido, comparando el GetType
                 {
                     enemigo.HumanoAtaque();
-                }
+                }//Devuelve true si el objeto es o hereda de ese tipo, Ideal para comprobación rápida
 
             }
 
