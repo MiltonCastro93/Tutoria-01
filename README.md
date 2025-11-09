@@ -79,7 +79,7 @@ Esto lo convierte en una herramienta ideal para **diseñadores** o **artistas t�
 - No permite un control total sobre el flujo (no admite `+=` o `-=` en código).  
 - Puede romper enlaces si los objetos asignados se eliminan o renombran.  
 
-🔹 Event — Sistema Nativo de C#
+### 🔹 Event -> Sistema Nativo de C#
 El Event de C# representa un enfoque más técnico y modular.
 A diferencia del UnityEvent, este no se configura desde el Inspector, pero ofrece mayor control, rendimiento y seguridad.
 Es ideal para proyectos grandes o cuando se necesita comunicación entre sistemas sin dependencias directas.
