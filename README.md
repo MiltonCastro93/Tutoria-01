@@ -50,7 +50,9 @@ Estos conceptos fomentan un **código más modular, limpio y reutilizable**, red
 
 ### 🧠 Uso de ScriptableObject y CreateAssetMenu
 
-Se presentó el **ScriptableObject** como recurso clave para almacenar y gestionar datos sin necesidad de instanciar objetos en escena.  
+Se presentó el **ScriptableObject** como recurso clave para almacenar y gestionar datos sin necesidad de instanciar objetos en escena, estos se los puede usar como <b>`[Contenedor]`</b>, 
+donde vas a poner todos los datos iniciales para tu jugador, enemigo, npcs, etc. Luego lo referencias en tu script del editor y obtenes los datos, nada mas.
+
 Con el atributo `[CreateAssetMenu]`, se explicó cómo generar **activos personalizados** directamente desde el editor.
 
 También se destacó el uso de **structs serializables** para agrupar variables relacionadas (posición, daño, nombre y efectos visuales), aprovechando la **herencia del ScriptableObject** para mejorar la organización y la eficiencia del proyecto.
